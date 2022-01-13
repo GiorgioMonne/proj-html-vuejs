@@ -8,7 +8,7 @@
                   <a href="#">dfg</a>
               </li>
               <li class="titolo">
-                <h1>AVADA SPA</h1>
+               <img src="../assets/foto/avada-spa-logo-retina-new-400x46.png" alt="">
               </li>
               <li class="right">
                   <a href="#">dfg</a>
@@ -67,6 +67,11 @@ export default {
 
                 a{
                     margin: 20px;
+                }
+
+                img{
+                    vertical-align: middle;
+                   height: 30px;
                 }
             }
         }

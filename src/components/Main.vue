@@ -31,6 +31,57 @@
               <h3>Natural Beauty</h3>
           </div>
       </div>
+
+      <div class="appointment">
+          <div class="foto">
+              <img src="../assets/foto/jacuzzi.jpg" alt="">
+          </div>
+
+          <div class="info-foto">
+              <div class="contenuto">
+                  <h2>Face & Body Treatments</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed maxime nisi placeat repellat voluptates cumque ullam accusantium in illum.</p>
+              <div class="comparsa">
+                  <div class="oil-mass">
+                      <div class="normal active">
+                          <i class="fas fa-plus-square"></i> <h4>Oil Massage</h4>
+                      </div>
+
+                      <div class="click">
+                        <i class="fas fa-minus-square"></i> <h4>Oil Massage</h4>
+                        <h5>$62 For 2 Hours - Lorem ipsum dolor sit amet</h5>
+                      </div>
+                  </div>
+
+                  <div class="manicure">
+                       <div class="normal active">
+                          <i class="fas fa-plus-square"></i> <h4>Manicure</h4>
+                      </div>
+
+                      <div class="click">
+                        <i class="fas fa-minus-square"></i> <h4>Manicure</h4>
+                        <h5>$62 For 2 Hours - Lorem ipsum dolor sit amet</h5>
+                      </div>
+
+                  </div>
+
+                  <div class="aromatherapy">
+                       <div class="normal active">
+                          <i class="fas fa-plus-square"></i> <h4>Aromatherapy</h4>
+                      </div>
+
+                      <div class="click">
+                        <i class="fas fa-minus-square"></i> <h4>Aromatherapy</h4>
+                        <h5>$62 For 2 Hours - Lorem ipsum dolor sit amet</h5>
+                      </div>
+
+                  </div>
+              </div>
+
+              </div>
+              
+          </div>
+      </div>
   </main>
 </template>
 
@@ -82,8 +133,8 @@ export default {
 
 .disegni{
         height: 150px;
-        width: 1200px;
-        margin:50px auto;
+        width: 1100px;
+        margin:100px auto;
         display: flex;
         // background-color: red;
 
@@ -101,9 +152,100 @@ export default {
         }
 
         #emo{
-            font-size: 50px;
+            font-size: 40px;
             margin: 10px;
         }
+}
+
+.appointment{
+    width: 1000px;
+    padding: 100px auto;
+    margin: 150px auto;
+    display: flex;
+    
+
+    .foto{
+        width: 50%;
+        background-color: aquamarine;  
+        box-shadow: 4px 4px 3px 3px rgb(192, 192, 192); 
+        margin:0 20px;   
+
+        img{
+            height: 100%;
+            width: 100%;
+            border: 20px solid white;
+            
+        }
+    }
+
+    .info-foto{
+        width: 50%;
+        margin: auto;
+
+        .contenuto{
+            width: 60%;
+            margin: auto;
+
+            h2{
+            font-size: 40px;
+            }
+
+            p{
+            margin:30px 0;
+            }
+
+            .comparsa{
+                // background-color: bisque;
+
+                .oil-mass{
+                    border: 1px solid rgb(226, 226, 226);
+                    padding: 10px;
+
+                }
+
+                .manicure{
+                    border: 1px solid rgb(226, 226, 226);
+                    padding: 10px;
+                    margin: 5px 0;
+                }
+
+                .aromatherapy{
+                    border: 1px solid rgb(226, 226, 226);
+                    padding: 10px;
+                }
+
+                i{
+                    margin: 0 10px 0px 0;
+                    color: grey;
+                }
+
+                .click{
+                    display: flex;
+                    flex-wrap: wrap;
+                    display: none;
+                    
+
+                    h5{
+                       padding-right: 50px;
+                       margin: 20px 5px;
+                       color: grey;
+                    }
+                }
+
+                .active{
+                    display: inline;
+                }
+
+                .normal{
+                    display: flex;
+                    color: rgb(177, 176, 176);
+                }
+            }
+        }
+
+        
+    }
+
 }
 
 </style>
