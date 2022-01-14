@@ -1,30 +1,52 @@
 <template>
   <header>
-      <div class="nav">
-          <ul>
-              <li class="left">
-                  <a href="#">dfgdf</a>
-                  <a href="#">dfgg</a>
-                  <a href="#">dfg</a>
-              </li>
-              <li class="titolo">
-               <img src="../assets/foto/avada-spa-logo-retina-new-400x46.png" alt="">
-              </li>
-              <li class="right">
-                  <a href="#">dfg</a>
-                  <a href="#">fgsdfg</a>
-                  <a href="#">dgdg</a>
-                  <a href="#">+</a>
-              </li>
-          </ul>
-      </div>
+        <div class="nav">
+            <div class="left">
 
-      <div class="jumbo">
+                <div class="navali">
+                    <i id="blue" class="fas fa-home"></i>  
+                </div>
+
+                <div class="navali">
+                    <i class="fab fa-pagelines"></i>
+                    <h4>TREATMENT</h4>
+                    <h5>Face & body</h5>    
+                </div>
+                <div class="navali">
+                    <i class="fab fa-pagelines"></i>
+                    <h4>ABOUT</h4>
+                    <h5>Our Team</h5>    
+                </div>
+            </div>
+
+            <div class="mid">
+
+              <img id="logotop" src="../assets/foto/avada-spa-logo-retina-new-200x23.png" alt="">
+
+            </div>
+
+            <div class="navali">
+                <i class="fab fa-pagelines"></i>
+                <h4>JOURNAL</h4>  
+                <h5>Tips & Tricks</h5>  
+            </div>
+            <div class="navali">
+                <i class="fab fa-pagelines"></i>
+                <h4>TREATMENT</h4>
+                <h5>Special Offers</h5>    
+            </div>    
+            <div class="navali">
+                   <i class="fas fa-plus"></i>
+            </div>  
+
+        </div>
+
+        <div class="jumbo">
           <img src="../assets/foto/avada-spa-slider-image-1-new.jpg" alt="">
 
           <div class="cubo-info">
               <div class="cubo-uno">
-                  <img src="" alt="">
+                  <i class="fas fa-folder-open"></i>
                   <h5>Demos</h5>
               </div>
 
@@ -50,30 +72,38 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-
     .nav{
-        height: 80px;
         width: 100%;
-        background-color: greenyellow;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        ul{
+        .left{
             display: flex;
-            justify-content: center;
-            line-height: 80px;
 
-            li{                
-                list-style: none;
-                margin: 0 30px;
-
-                a{
-                    margin: 20px;
-                }
-
-                img{
-                    vertical-align: middle;
-                   height: 30px;
-                }
+            #blue{
+                color: rgb(85, 175, 226);
             }
+
+        }
+
+        .navali{
+            margin: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: grey;
+            
+            h5{
+                color: lightgray;
+            }
+        }
+
+        .mid{
+            margin: 0 50px;
+        
         }
     }
 
@@ -92,22 +122,28 @@ export default {
             position: absolute;
             top: 40px;
             right: 10px;
-            height: 80px;
-            width: 80px;
+            height: 60px;
+            width: 60px;
             border-radius: 10px;
             background-color: pink;
             text-align: center;
+
+            i{
+                padding-top: 5px;
+                font-size: 25px;
+            }
         }
 
         .cubo-due{
             position: absolute;
             top: 140px;
             right: 10px;
-            height: 80px;
-            width: 80px;
+            height: 60px;
+            width: 60px;
             border-radius: 10px;
             background-color: pink;
             text-align: center;
+            padding-top: 5px;
         }
 
         .info{
