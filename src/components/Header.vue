@@ -95,6 +95,7 @@ export default {
             align-items: center;
             justify-content: center;
             color: grey;
+            cursor: pointer;
             
             h5{
                 color: lightgray;
@@ -127,6 +128,7 @@ export default {
             border-radius: 10px;
             background-color: pink;
             text-align: center;
+            cursor: pointer;
 
             i{
                 padding-top: 5px;
@@ -144,6 +146,7 @@ export default {
             background-color: pink;
             text-align: center;
             padding-top: 5px;
+            cursor: pointer;
         }
 
         .info{
@@ -170,6 +173,7 @@ export default {
                 color: white;
                 font-weight: bold;
                 background-color: rgb(206, 203, 203);
+                cursor: pointer;
             }
         }
     }

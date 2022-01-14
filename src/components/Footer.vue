@@ -65,7 +65,7 @@ export default {
       text-align: center;
       line-height: 40px;
       margin: 5px;
-
+      cursor: pointer;
     }
 
   }

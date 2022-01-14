@@ -9,28 +9,7 @@
           <button class="approach">OUR APPROACH</button>
       </div>
 
-      <div class="disegni">
-          <div class="scard uno">
-              <i id="emo" class="fas fa-hands-wash"></i>
-              <h3>Massages</h3>
-          </div>
-          <div class="scard due">
-              <i id="emo" class="far fa-smile"></i>
-                <h3>Therapy</h3>
-          </div>
-          <div class="scard uno">
-              <i id="emo" class="fas fa-heart"></i>
-              <h3>Relaxing</h3>
-          </div>
-          <div class="scard due">
-              <i id="emo" class="far fa-moon"></i>
-              <h3>Meditation</h3>
-          </div>
-          <div class="scard uno">
-              <i id="emo" class="fas fa-bahai"></i>
-              <h3>Natural Beauty</h3>
-          </div>
-      </div>
+        <Disegni/>
 
       <div class="appointment">
           <div class="foto">
@@ -43,7 +22,7 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed maxime nisi placeat repellat voluptates cumque ullam accusantium in illum.</p>
 
 
-              <div class="comparsa">
+                <div class="comparsa">
                   <div class="oil-mass">
                       <div class="normal active">
                           <i class="fas fa-plus-square"></i> <h4>Oil Massage</h4>
@@ -78,81 +57,25 @@
                       </div>
 
                   </div>
-              </div>
+                </div>
 
-                <button id="info-btn" class="approach">BOOK AN APPOINTMENT</button>
+                    <button id="info-btn" class="approach">BOOK AN APPOINTMENT</button>
 
-              </div>
+                </div>
               
-          </div>
-      </div>
+            </div>
+        </div>
 
-      <div class="lista-trattamenti">
+        <div class="lista-trattamenti">
           <div class="top">
               <h2>OUR TREATMENTS</h2>
           </div>
 
-            <div class="card-list">
-                
-                <div class="card">
-                    <img src="../assets/foto/donna-acqua.jpg" alt="">
-                    <h2>Hydrotherapy</h2>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed autem voluptates molestias repudiandae vel blanditiis eligendi quidem eius illum numquam neque eum, rem nihil placeat est sit error ex ipsum?</p>
-                </div>
+        <Card/>
 
-                <div class="card">
-                    <img src="../assets/foto/massaggino.jpg" alt="">
-                    <h2>Massage</h2>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed autem voluptates molestias repudiandae vel blanditiis eligendi quidem eius illum numquam neque eum, rem nihil placeat est sit error ex ipsum?</p>
-                </div>
+        </div>
 
-                <div class="card">
-                    <img src="../assets/foto/cose.jpg" alt="">
-                    <h2>Aromatherapy</h2>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed autem voluptates molestias repudiandae vel blanditiis eligendi quidem eius illum numquam neque eum, rem nihil placeat est sit error ex ipsum?</p>
-                </div>
-
-                <div class="card">
-                    <img src="../assets/foto/centro-benessere.jpg" alt="">
-                    <h2>Heat Therapy</h2>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed autem voluptates molestias repudiandae vel blanditiis eligendi quidem eius illum numquam neque eum, rem nihil placeat est sit error ex ipsum?</p>
-                </div>
-
-                <div class="card">
-                    <img src="../assets/foto/skincare-pelle-grassa.webp" alt="">
-                    <h2>Skin Care</h2>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed autem voluptates molestias repudiandae vel blanditiis eligendi quidem eius illum numquam neque eum, rem nihil placeat est sit error ex ipsum?</p>
-                </div>
-
-                <div class="card">
-                    <img src="../assets/foto/healthy_porridge_bowl-d434804.jpg" alt="">
-                    <h2>Spa Days</h2>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed autem voluptates molestias repudiandae vel blanditiis eligendi quidem eius illum numquam neque eum, rem nihil placeat est sit error ex ipsum?</p>
-                </div>
-
-                <div class="card">
-                    <img src="../assets/foto/treatments.jpg" alt="">
-                    <h2>Beauty Treatments</h2>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed autem voluptates molestias repudiandae vel blanditiis eligendi quidem eius illum numquam neque eum, rem nihil placeat est sit error ex ipsum?</p>
-                </div>
-                <div class="card">
-                    <img src="../assets/foto/bagno.jpg" alt="">
-                    <h2>Residential</h2>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed autem voluptates molestias repudiandae vel blanditiis eligendi quidem eius illum numquam neque eum, rem nihil placeat est sit error ex ipsum?</p>
-                </div>
-            </div>
-
-      </div>
-
-      <div class="secondo-jumbo">
+        <div class="secondo-jumbo">
           <img class="saponi" src="../assets/foto/belli.jpg" alt="">
 
             <div class="cont">
@@ -160,7 +83,7 @@
                 <h4>FRIEDA FRIEDSON,MASSEUSE</h4>
             </div>
 
-      </div>
+        </div>
 
       <div class="sconto">
           <div class="rimpicc">
@@ -185,8 +108,16 @@
 </template>
 
 <script>
+
+import Card from '../assets/sections/Card.vue';
+import Disegni from '../assets/sections/Disegni.vue';
+
 export default {
-    name: 'Main'
+    name: 'Main',
+    components: {
+        Card,
+        Disegni
+    }
 }
 </script>
 
@@ -230,32 +161,7 @@ export default {
         background-color: white;
         color: rgb(181, 180, 180);
         font-weight: bold;
-    }
-
-.disegni{
-        height: 150px;
-        width: 1100px;
-        margin:100px auto;
-        display: flex;
-        // background-color: red;
-
-        .scard{
-            height: 60%;
-            width: calc(100% / 5);
-            align-items: center;
-            flex-direction: column;
-            display: flex;
-            color: rgb(187, 185, 185);
-        }
-
-        .due{
-           align-self: flex-end;
-        }
-
-        #emo{
-            font-size: 40px;
-            margin: 10px;
-        }
+        cursor: pointer;
 }
 
 .appointment{
@@ -345,6 +251,7 @@ export default {
 
             #info-btn{
                 margin: 30px 0;
+                cursor: pointer;
             }
         }
 
@@ -364,41 +271,7 @@ export default {
             line-height: 150px;
             color: white;
             background-image: url('../assets/foto/disegnobello.jpg');
-        }
-
-        .card-list{
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .card{
-            height: 600px;
-            width: calc(100% / 4);
-            border: 1px solid rgb(241, 241, 241);
-            color: grey;
-            
-
-
-            img{
-                height: 70%;
-                width: 100%;
-                
-            }
-
-            hr{
-                width: 90%;
-                margin:15px auto;
-                color: lightgray;
-            }
-
-            h2{
-                margin:15px 20px;
-            }
-
-            p{
-                margin:15px 20px;
-            }
-     }
+        }        
 }
 
 .secondo-jumbo{
@@ -486,6 +359,7 @@ export default {
                 background-color: lightgrey;
                 color: white;
                 font-weight: bold;
+                cursor: pointer;
             }
         }
 
