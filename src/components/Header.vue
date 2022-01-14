@@ -13,7 +13,7 @@
                     <h5>Face & body</h5>    
                 </div>
                 <div class="navali">
-                    <i class="fab fa-pagelines"></i>
+                    <i class="fas fa-male"></i>
                     <h4>ABOUT</h4>
                     <h5>Our Team</h5>    
                 </div>
@@ -26,12 +26,12 @@
             </div>
 
             <div class="navali">
-                <i class="fab fa-pagelines"></i>
+                <i class="fas fa-heart"></i>
                 <h4>JOURNAL</h4>  
                 <h5>Tips & Tricks</h5>  
             </div>
             <div class="navali">
-                <i class="fab fa-pagelines"></i>
+                <i class="fas fa-bookmark"></i>
                 <h4>TREATMENT</h4>
                 <h5>Special Offers</h5>    
             </div>    
